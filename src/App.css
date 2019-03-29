@@ -2,10 +2,61 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App-puzzle {
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  border: 4px #000000 solid;
+}
+
+.App-puzzle-block {
+  display: flex;
+  border: 2px #000000 solid;
+}
+
+.App-puzzle-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App-puzzle-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-puzzle-box {
+  display: flex;
+  height: 5vh;
+  width: 5vh;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border: 2px #BDBDBD solid;
+  color: #000000;
+}
+
+.App-button-row {
+  height: 100px;
+  width: 40vmin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Img-robot {
+  height: 4vmin;
+}
+
+.App-button {
+  height: 5vmin;
+  border-radius: 12px;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
+  font-size: calc(10px + 2vmin);
+  color: #FFFFFF;
 }
 
 .App-header {
@@ -14,20 +65,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  font-size: calc(20px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

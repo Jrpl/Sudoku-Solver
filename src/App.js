@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import robot from './robot.png';
 import './App.css';
 
 class App extends Component {
@@ -7,18 +7,213 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1>Sudoku Solver</h1>
+          <div className="App-puzzle">
+            <div className="App-puzzle-column">
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="App-puzzle-column">
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="App-puzzle-column">
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className= "App-puzzle-row">
+                <div className="App-puzzle-block">
+                  <div className="App-puzzle-column">
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">2</p>
+                      <p className="App-puzzle-box">5</p>
+                      <p className="App-puzzle-box">3</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">9</p>
+                      <p className="App-puzzle-box">1</p>
+                      <p className="App-puzzle-box">7</p>
+                    </div>
+                    <div className="App-puzzle-row">
+                      <p className="App-puzzle-box">8</p>
+                      <p className="App-puzzle-box">3</p>
+                      <p className="App-puzzle-box">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Generate a puzzle
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div className="App-button-row">
+            <button className="App-button">Easy</button>
+            <button className="App-button">Medium</button>
+            <button className="App-button">Hard</button>
+            <button className="App-button"><img src={robot} className="Img-robot" alt="robot"></img></button>
+          </div>
         </header>
       </div>
     );
