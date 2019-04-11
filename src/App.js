@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import robot from './robot.png';
 import './App.css';
+import SudokuGrid from './SudokuGrid';
+
+const referenceGrid = [
+  [7, 9, 1, 0, 0, 2, 0, 4, 5],
+  [0, 0, 3, 4, 0, 0, 0, 2, 9],
+  [0, 0, 0, 1, 9, 5, 0, 8, 0],
+  [6, 3, 0, 0, 0, 9, 0, 1, 8],
+  [0, 0, 7, 3, 0, 0, 2, 0, 0],
+  [0, 5, 0, 0, 1, 4, 0, 3, 0],
+  [0, 7, 0, 0, 0, 0, 5, 0, 2],
+  [4, 0, 9, 0, 5, 3, 8, 0, 0],
+  [1, 0, 0, 2, 8, 0, 4, 0, 0],
+];
 
 class App extends Component {
   render() {
@@ -8,203 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Sudoku Solver</h1>
-          <div className="App-puzzle">
-            <div className="App-puzzle-column">
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="App-puzzle-column">
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="App-puzzle-column">
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className= "App-puzzle-row">
-                <div className="App-puzzle-block">
-                  <div className="App-puzzle-column">
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">2</p>
-                      <p className="App-puzzle-box">5</p>
-                      <p className="App-puzzle-box">3</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">9</p>
-                      <p className="App-puzzle-box">1</p>
-                      <p className="App-puzzle-box">7</p>
-                    </div>
-                    <div className="App-puzzle-row">
-                      <p className="App-puzzle-box">8</p>
-                      <p className="App-puzzle-box">3</p>
-                      <p className="App-puzzle-box">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <SudokuGrid grid={ referenceGrid } />
           <p>
             Generate a puzzle
           </p>
