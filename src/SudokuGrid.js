@@ -1,4 +1,5 @@
 import React from 'react';
+
 const SudokuGrid = ({ grid }) => (
     <div className="App-puzzle">
             <div className="App-puzzle-column">
@@ -22,4 +23,5 @@ const SudokuGrid = ({ grid }) => (
             </div>
           </div>
 );
+
 export default SudokuGrid;
