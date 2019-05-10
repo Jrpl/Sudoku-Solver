@@ -23,6 +23,10 @@ function getContainedInColumn(grid, columnIndex) {
   return matches;
 }
 
+/**
+ * 0,0 0,1 0,2
+ * 1,0 1,1 1,2
+ */
 function getContainedInBlock(grid, blockRowIndex, blockColumnIndex) {
   const matches = new Set();
   const rowStart = blockRowIndex * BASE;
@@ -38,8 +42,8 @@ function getContainedInBlock(grid, blockRowIndex, blockColumnIndex) {
   return matches;
 }
 
-module.exports = {
+export {
   getContainedInRow,
   getContainedInColumn,
-  getContainedInBlock,
+  getContainedInBlock
 };
