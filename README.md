@@ -4,6 +4,8 @@ A React web app that visualizes an algorithm solving a Sudoku puzzle
 ## Authors
 Justin Pfeifler  
 Tedd Lorts
+Chad Juehring
+Bryan Walker
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
